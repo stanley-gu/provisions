@@ -71,6 +71,7 @@ then
 sudo npm install -g bower
 sudo npm install -g nodemon
 sudo npm install -g express
+sudo npm install -g js-beautify jshint
 fi
 
 if [ $1 = "java" -o $1 = "all" ]
