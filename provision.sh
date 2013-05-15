@@ -81,5 +81,11 @@ sudo apt-get install -y openjdk-6-jdk
 echo "export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-i386/" >> ~/.bashrc
 fi
 
+if [ $1 = "dotfiles" -o $1 = "all" ]
+then
+git clone git://github.com/stanley-gu/dotfiles
+dotfiles/installer.py
+fi
+
 
 
