@@ -22,6 +22,7 @@ if [ $1 = "spf13" -o $1 = "all" ]
 then
 # Downloading and installing git repos
 curl http://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+sudo echo "LC_ALL="en_US.UTF8"" > /etc/default/locale
 fi
 
 if [ $1 = "rr" -o $1 = "all" ]
